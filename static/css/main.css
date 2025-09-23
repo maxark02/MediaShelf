@@ -1,0 +1,58 @@
+@import "../../node_modules/tailwindcss/dist/lib.d.mts";
+
+.header {
+    display: flex;
+    background: #F4F4F9;
+    border-bottom: 5px solid gold;
+    height: 10vh;
+}
+nav {
+    display: flex;
+    margin-left: auto;
+}
+main {
+    background: #F4F4F9;
+}
+nav a{
+    color : white;
+}
+.flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo {
+    height: 80px;
+    width: 80px;
+
+}
+
+.text {
+    background-color: white;
+    color: #1E293B;
+    border-radius: 20px;
+    padding: 4px;
+}
+.navigate {
+    display: inline-block;
+    margin-right: 50px;
+}
+.navigate a {
+    display: inline-block;
+    color: #1E293B;
+}
+.media {
+    display: inline-block;
+    color: #1E293B;
+    padding: 27px;
+    row-gap: 20px;
+    font-size: 17px;
+}
+.media a {
+    color: #1E293B;
+    margin-left: 40px;
+
+}
+.search-box {
+    padding: 100px;
+}
