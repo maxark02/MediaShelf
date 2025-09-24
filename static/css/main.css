@@ -2,7 +2,7 @@
 
 .header {
     display: flex;
-    background: #F4F4F9;
+    background: #1E293B;
     border-bottom: 5px solid gold;
     height: 10vh;
 }
@@ -11,10 +11,13 @@ nav {
     margin-left: auto;
 }
 main {
-    background: #F4F4F9;
+    padding-top: 50px;
 }
-nav a{
-    color : white;
+.header nav a{
+    background-color: #1E293B;
+    border-radius: 8px;
+    color: #F4F4F9;
+    padding: 5px 10px;
 }
 .flex-wrapper {
     display: flex;
@@ -55,5 +58,55 @@ nav a{
 
 }
 .search-box {
-    padding: 100px;
+    padding: 236px;
+
 }
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #1E293B;
+}
+
+footer {
+    text-align: left;
+    background-color: black ;
+    padding: 50px;
+    color: white;
+}
+h3 {
+    color: white;
+    text-align: center;
+}
+
+.text-box {
+   font-size: 16px;
+    text-align: center;
+}
+.img-box {
+    display: block;
+    overflow-x: auto ;
+    padding: 30px;
+    text-align: center;
+}
+.recommended {
+    padding-bottom: 100px;
+    display: flex;
+    text-align: center;
+    overflow-x: auto;
+}
+p {
+    text-align: justify;
+    padding-bottom: 10px;
+
+}
+.recommended img{
+     width: 250px;
+     height: 350px;
+    object-fit: cover;
+    flex: 0 0 30px;
+ }
+ .new img{
+     width: 250px;
+     height: 350px;
+     flex: 0 0 30px;
+ }
