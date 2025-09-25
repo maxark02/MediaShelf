@@ -38,14 +38,14 @@ def index():
 def home():
     recommended_movies = [
         {"thumbnail": "https://img.youtube.com/vi/YoHD9XEInc0/hqdefault.jpg"},
-        {"thumbnail": "https://img.youtube.com/vi/WIrMeVa0Fzc&t=78s/hqdefaul.jpg"},
-        {"thumbnail": "https://img.youtube.com/vi/WIrMeVa0Fzc&t=78s/hqdefaul.jpg"},
-        {"thumbnail": "https://img.youtube.com/vi/WIrMeVa0Fzc&t=78s/hqdefaul.jpg"},
-        {"thumbnail": "https://img.youtube.com/vi/WIrMeVa0Fzc&t=78s/hqdefaul.jpg"},
-        {"thumbnail": "https://img.youtube.com/vi/WIrMeVa0Fzc&t=78s/hqdefaul.jpg"},
-        {"thumbnail": "https://img.youtube.com/vi/WIrMeVa0Fzc&t=78s/hqdefaul.jpg"},
-        {"thumbnail": "https://img.youtube.com/vi/WIrMeVa0Fzc&t=78s/hqdefaul.jpg"},
-        {"thumbnail": "https://img.youtube.com/vi/WIrMeVa0Fzc&t=78s/hqdefaul.jpg"}
+        {"thumbnail": "https://img.youtube.com/vi/U3ykqvW1OSk/hqdefault.jpg"},
+        {"thumbnail": "https://img.youtube.com/vi/U3ykqvW1OSk/hqdefault.jpg"},
+        {"thumbnail": "https://img.youtube.com/vi/U3ykqvW1OSk/hqdefault.jpg"},
+        {"thumbnail": "https://img.youtube.com/vi/U3ykqvW1OSk/hqdefault.jpg"},
+        {"thumbnail": "https://img.youtube.com/vi/U3ykqvW1OSk/hqdefault.jpg"},
+        {"thumbnail": "https://img.youtube.com/vi/U3ykqvW1OSk/hqdefault.jpg"},
+        {"thumbnail": "https://img.youtube.com/vi/U3ykqvW1OSk/hqdefault.jpg"},
+        {"thumbnail": "https://img.youtube.com/vi/U3ykqvW1OSk/hqdefault.jpg"}
     ]
     
     new_movies = []
