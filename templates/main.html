@@ -23,7 +23,7 @@
 
         </div>
       <div class="navigate">
-        <a href="../templates/signIn.html">Sign In</a>
+        <a href="signIn">Sign In</a>
         </div>
     </div>
     </nav>
@@ -49,7 +49,10 @@
         <li>
     <section class = "new">
         <div class = "img-box">
-                    <img src = "stas9n.png" alt = "movie" >
+            {% for movie in new_movies %}
+            <img src = "{{ movie['thumbnail'] }}" alt = "movie" >
+            {% endfor %}
+
         </div>
     </section>
         </li>
@@ -60,8 +63,12 @@
         <li>
             <section class = "recommended">
                 <div class = "img-box">
-                    <img src = "maximlisa.png" alt = "movie" >
+                    {% for movie in hotter_one_movies %}
+
+                    <img src = "{{ movie['thumbnail'] }}" alt = "movie" >
                     <div class = "text-box">
+                        {% endfor %}
+
 
                     </div>
                 </div>

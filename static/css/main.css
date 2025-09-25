@@ -33,7 +33,7 @@ main {
     background-color: white;
     color: #1E293B;
     border-radius: 20px;
-    padding: 4px;
+    padding: 8px;
 }
 .navigate {
     display: inline-block;
@@ -105,9 +105,11 @@ p {
      height: 350px;
     object-fit: cover;
     flex: 0 0 30px;
+    border-radius: 15px;
  }
  .new img{
      width: 250px;
      height: 350px;
      flex: 0 0 30px;
+     border-radius: 15px;
  }
