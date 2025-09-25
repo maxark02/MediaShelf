@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
-     <link rel="stylesheet" href="main.css">
-    <link href="../dist/output.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="logo.ico">
+     <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="icon" type="image/x-icon" href="../static/images/logo.ico">
     <title>MediaShelf</title>
 </head>
 
 <header class = "header">
        <div class = "logo">
-         <img src = "logo.png" alt="logo">
+         <img src = "../static/images/logo.png" height="80" width="80" alt="logo">
        </div>
 
     <div class = "media">
@@ -24,7 +23,7 @@
 
         </div>
       <div class="navigate">
-        <a href="signIn.html">Sign In</a>
+        <a href="../templates/signIn.html">Sign In</a>
         </div>
     </div>
     </nav>
@@ -38,8 +37,8 @@
     <section class = "recommended">
           <div class = "img-box">
               {% for movie in recommended_movies %}
-        <img src = "{{ movie[thumbnail ']}}" alt = "movie" >
-              { % end for %}
+        <img src = "{{ movie['thumbnail'] }}" alt = "movie" >
+              {% endfor %}
 </div>
     </section>
     </li>

@@ -1,5 +1,9 @@
 @import "../../node_modules/tailwindcss/dist/lib.d.mts";
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .header {
     display: flex;
     background: #1E293B;
@@ -12,8 +16,6 @@ nav {
 }
 main {
     padding-top: 50px;
-    background-image: url("/static/images/back.jpg");
-
 }
 .header nav a{
     background-color: #1E293B;
@@ -26,10 +28,7 @@ main {
     flex-direction: row;
     align-items: center;
 }
-.logo {
-    height: 80px;
-    width: 80px;
-}
+
 .text {
     background-color: white;
     color: #1E293B;
@@ -84,15 +83,16 @@ h3 {
 }
 .img-box {
     display: block;
-    overflow-x: auto ;
     padding: 30px;
     text-align: center;
+    overflow-x: scroll;
 }
 .recommended {
     padding-bottom: 100px;
     display: flex;
     text-align: center;
-    overflow-x: auto;
+    overflow-x: hidden ;
+    white-space: nowrap;
 
 }
 p {
