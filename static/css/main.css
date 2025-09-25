@@ -54,7 +54,7 @@ main {
 .media a {
     color: white;
     margin-left: 40px;
-
+   text-decoration: none;
 }
 .search-box {
     padding: 236px;
