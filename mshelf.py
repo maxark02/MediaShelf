@@ -37,20 +37,24 @@ def index():
 @app.route('/main')
 def home():
     recommended_movies = [
-        {"thumbnail": "https://img.youtube.com/vi/YoHD9XEInc0/hqdefault.jpg"},
-        {"thumbnail": "https://img.youtube.com/vi/U3ykqvW1OSk/hqdefault.jpg"},
-        {"thumbnail": "https://img.youtube.com/vi/U3ykqvW1OSk/hqdefault.jpg"},
-        {"thumbnail": "https://img.youtube.com/vi/U3ykqvW1OSk/hqdefault.jpg"},
-        {"thumbnail": "https://img.youtube.com/vi/U3ykqvW1OSk/hqdefault.jpg"},
-        {"thumbnail": "https://img.youtube.com/vi/U3ykqvW1OSk/hqdefault.jpg"},
-        {"thumbnail": "https://img.youtube.com/vi/U3ykqvW1OSk/hqdefault.jpg"},
-        {"thumbnail": "https://img.youtube.com/vi/U3ykqvW1OSk/hqdefault.jpg"},
-        {"thumbnail": "https://img.youtube.com/vi/U3ykqvW1OSk/hqdefault.jpg"}
+        {"thumbnail": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg"},
+        {"thumbnail": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg"},
+        {"thumbnail": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg"},
+        {"thumbnail": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg"},
+        {"thumbnail": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg"},
+        {"thumbnail": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg"},
+        {"thumbnail": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg"},
+        {"thumbnail": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg"},
+        {"thumbnail": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg"}
     ]
     
-    new_movies = []
+    new_movies = [
+        {"thumbnail": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg"}
+    ]
 
-    hotter_one_movies = []
+    hotter_one_movies = [
+        {"thumbnail": "https://m.media-amazon.com/images/M/MV5BN2FjNWExYzEtY2YzOC00YjNlLTllMTQtNmIwM2Q1YzBhOWM1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"}
+    ]
     return render_template("main.html", recommended_movies=recommended_movies,new_movies=new_movies,hotter_one_movies=hotter_one_movies)
 
 @app.route('/signUp', methods=['GET', 'POST'])
