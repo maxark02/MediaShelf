@@ -34,15 +34,15 @@
 <main>
     <h2>Recommended</h2>
 <ul>
-    {% for movies in recommended %}
     <li>
     <section class = "recommended">
           <div class = "img-box">
-        <img src = "{{ movies thumbnail }}" alt = "movie" >
+              {% for movie in recommended_movies %}
+        <img src = "{{ movies.thumbnail }}" alt = "movie" >
+              { % endfor %}
 </div>
     </section>
     </li>
-    { %endfor %}
 </ul>
 
     <h2>New</h2>
