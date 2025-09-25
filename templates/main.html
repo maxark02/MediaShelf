@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
      <link rel="stylesheet" href="../static/css/main.css">
-    <link rel="icon"  href="../static/images/logo.ico">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/logo.ico') }}">
     <title>MediaShelf</title>
 </head>
 
@@ -66,19 +66,15 @@
     </ul>
     <h2>Hotter one</h2>
     <ul>
-
         <li>
-            <section class = "recommended">
+            <section class = "hot">
                 <div class = "img-box">
                     {% for movie in hotter_one_movies %}
-
                     <img src = "{{ movie['thumbnail'] }}" alt = "movie" >
-                    <div class = "text-box">
                         {% endfor %}
 
 
                     </div>
-                </div>
             </section>
         </li>
     </ul>

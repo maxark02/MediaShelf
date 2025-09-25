@@ -8,19 +8,28 @@
 .header {
     display: flex;
     background: #1E293B;
-    border-bottom: 5px solid gold;
+    box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
     height: 10vh;
 }
 nav {
     display: flex;
     margin-left: auto;
 }
+nav input {
+    box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
+    border-color: #3b3ef6;
+}
 body {
-   background-color:#E3DAC9;
+   background-color: #1E293B;
 
 }
 nav a{
     color : white;
+    text-decoration: none;
+    background-color: #3b3ef6;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 2px rgba(0,0,0,0.2);
+
 }
 .flex-wrapper {
     display: flex;
@@ -42,6 +51,7 @@ nav a{
     color: #1E293B;
     border-radius: 20px;
     padding: 8px;
+
 }
 .navigate {
     display: inline-block;
@@ -70,51 +80,66 @@ nav a{
     padding: 100px;
 }
 .signIn {
-    background: #1E293B;
+    text-align: center;
     width: 500px;
     height: 450px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
+    box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
+
+}
+.registration-link a {
+    text-decoration: none;
+    color: white;
+
 }
 .registration-link {
-    color: #F4F4F9;
-    background: gold;
+
+    background: #3b3ef6;
     font-size: 16px;
-    text-decoration: none;
     padding: 10px;
     margin-top: 20px;
     width: 30%;
     border-radius: 10px;
     margin-right: auto;
     margin-left: auto;
+    box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
+
+
 }
-.registration-link a:visited {
+.registration-link:hover {
+    background: #E3DAC9;
     text-decoration: underline;
 }
-.registration-link a:hover {
-    background-color: #E3DAC9;
+.registration-link:active {
+    background: #1E293B;
+}
+.signIn-link a {
+    color: white;
+    text-decoration: none;
 }
 .signIn-link {
-    color: #F4F4F9;
-    background: gold;
+    background: #3b3ef6;
     font-size: 16px;
-    text-decoration: none;
     padding: 10px;
     margin-top: 20px;
     width: 30%;
     border-radius: 10px;
     margin-right: auto;
     margin-left: auto;
+    box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
+
 }
-.signIn-link a:visited {
+.signIn-link:hover {
     text-decoration: underline;
+    background: #E3DAC9;
 }
-.signIn-link a:hover {
-    background-color: #E3DAC9;
+.signIn-link:active {
+    background-color: gold;
 }
 .h2 {
-    color: gold;
+    color: #3b3ef6;
     background-color: #1E293B;
     text-align: center;
     margin-top: 80px;
@@ -133,20 +158,10 @@ nav a{
      color: #1E293B;
      margin-left: auto;
      margin-right: auto;
-     font-size: 25px;
+     font-size: 30px;
      background-color: white;
-     border-radius: 10px;
+     border-radius: 5px;
      margin-top: 20px;
- }
- .signIn {
-     text-align: center;
- }
- .form label {
-     background-color: #1E293B;
-     color: white;
-     width: 150px;
-     margin-left: auto;
-     margin-right: auto;
-     padding: 10px;
-     border-radius: 20px;
+     box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
+
  }
