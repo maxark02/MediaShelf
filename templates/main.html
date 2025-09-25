@@ -34,7 +34,7 @@
 <main>
     <h2>Recommended</h2>
 <ul>
-
+    {% for movies in recommended %}
     <li>
     <section class = "recommended">
           <div class = "img-box">
@@ -42,6 +42,7 @@
 </div>
     </section>
     </li>
+    { %endfor %}
 </ul>
 
     <h2>New</h2>
