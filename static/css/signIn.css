@@ -8,7 +8,7 @@
 .header {
     display: flex;
     background: #1E293B;
-    box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
+    box-shadow:  8px 16px 8px rgba(0,0,0,0.2);
     height: 10vh;
 }
 nav {
@@ -16,7 +16,7 @@ nav {
     margin-left: auto;
 }
 nav input {
-    box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
+    box-shadow: 8px 16px 8px rgba(0,0,0,0.2);
     border-color: #3b3ef6;
 }
 body {

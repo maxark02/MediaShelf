@@ -54,6 +54,7 @@ main {
     display: inline-block;
     text-decoration: none;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: relative;
 
 }
 .media {
@@ -62,11 +63,14 @@ main {
     padding: 27px;
     row-gap: 20px;
     font-size: 17px;
+
 }
 .media a {
     color: white;
     margin-left: 40px;
-   text-decoration: none;
+    text-decoration: none;
+    font-weight:  bold;
+
 }
 .search-box {
     padding: 236px;
@@ -133,19 +137,6 @@ p {
      box-shadow: 0px 10px 16px 10px rgba(0,0,0,0.2);
 
  }
- .dropdown-movies {
-     display: none;
-     background-color: green;
-     min-width: 130px;
-     color: red;
-     position: absolute;
-     padding: 12px 16px;
-     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
- }
-.dropdown:hover .dropdown-mcontent{
-     display: block;
-}
 .hot {
     padding-bottom: 100px;
     display: flex;
@@ -162,5 +153,13 @@ p {
     box-shadow: 0px 10px 16px 10px rgba(0,0,0,0.2);
     margin: 10px;
 
+}
+
+.dropdown-movies a .dr{
+    display: none;
+}
+.dropdown-movies a:hover {
+    background-color: white;
+    color: red;
 }
 
