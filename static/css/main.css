@@ -86,9 +86,10 @@ h2 {
 
 footer {
     text-align: left;
-    background-color: #3b3ef6 ;
+    background-color: #1E293B;
     padding: 50px;
     color: white;
+    box-shadow: 0 8px 16px 10px rgba(0,0,0,0.2);
 }
 h3 {
     color: white;
