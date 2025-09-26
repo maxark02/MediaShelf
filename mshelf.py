@@ -1,5 +1,5 @@
 import sqlite3
-from flask import Flask, render_template, request, redirect, url_for, session, flash
+from flask import Flask, render_template, request, redirect, url_for, session
 
 database = "site.db"
 
@@ -7,25 +7,6 @@ def get_db_connection():
     conn = sqlite3.connect(database)
     conn.row_factory = sqlite3.Row
     return conn
-
-def init_db():
-    """creating tables."""
-    conn = get_db_connection()
-    cur = conn.cursor()
-    cur.execute("""
-    CREATE TABLE IF NOT EXISTS users (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        username TEXT NOT NULL UNIQUE,
-        email TEXT NOT NULL UNIQUE,
-        password_hash TEXT NOT NULL,
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    );
-    """)
-    conn.commit()
-    conn.close()
-
-
-init_db()
 
 app = Flask(__name__)
 app.secret_key = "secret key"
@@ -93,13 +74,15 @@ def signin():
         if user:
             session['user_id'] = user['id']
             session['username'] = user['username']
-            return redirect(url_for())
+            return "Вы вошли в систему" 
+        else:
+            return "Неверный логин или пароль" 
+
     return  render_template("signIn.html")
 
 @app.route('/logOut')
 def logout():
     session.clear()
-    flash("Вы вышли из аккаунта", "info")
     return redirect(url_for('home'))
 
 @app.route('/profile')
@@ -108,7 +91,13 @@ def profile():
        return render_template("profile.html") 
     else:
         return redirect(url_for('signUp'))
-    return render_template("profile.html")
+
+@app.route('/movies')
+def movies():
+    return render_template("movies.html")
+@app.route('/series')
+def series():
+    return render_template("series.html")
 
 
 
