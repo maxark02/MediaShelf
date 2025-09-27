@@ -38,6 +38,7 @@ def home():
     ]
     return render_template("main.html", recommended_movies=recommended_movies,new_movies=new_movies,hotter_one_movies=hotter_one_movies)
 
+
 @app.route('/signUp', methods=['GET', 'POST'])
 def signUp():
     if request.method == 'POST':
@@ -54,10 +55,13 @@ def signUp():
         conn.commit()
         conn.close()
 
+        session['username'] = username
+        return redirect(url_for('registered'))
+
     return render_template("signUp.html")
 
 @app.route('/signIn', methods=['GET','POST'])
-def signin():
+def signIn():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
@@ -74,7 +78,7 @@ def signin():
         if user:
             session['user_id'] = user['id']
             session['username'] = user['username']
-            return "Вы вошли в систему" 
+            return redirect(url_for('registered'))
         else:
             return "Неверный логин или пароль" 
 
@@ -96,9 +100,13 @@ def profile():
 def movies():
     return render_template("movies.html")
 @app.route('/series')
+
 def series():
     return render_template("series.html")
 
+@app.route('/registered')
+def registered():
+    return render_template("registered.html")
 
 
 
