@@ -9,7 +9,7 @@ def get_db_connection():
     return conn
 
 app = Flask(__name__)
-app.secret_key = "secret key"
+app.secret_key = "moysekretniyklyu4"
 
 @app.route('/')
 def index():
@@ -92,7 +92,7 @@ def signIn():
             session['username'] = user['username']
             return redirect(url_for('registered'))
         else:
-            return "Неверный логин или пароль" 
+            return "invalid username or password"
 
     return  render_template("signIn.html")
 
@@ -118,7 +118,10 @@ def series():
 
 @app.route('/registered')
 def registered():
-    return render_template("registered.html")
+    if 'user_id' in session:
+        return render_template("registered.html")
+    else:
+        return redirect(url_for('signIn'))
 
 
 
