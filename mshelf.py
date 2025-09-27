@@ -65,9 +65,12 @@ def signUp():
             (username, email, password)
         )
         conn.commit()
+        user_id = cursor.lastrowid
         conn.close()
 
+        session['user_id'] = user_id
         session['username'] = username
+        session['just_logged_in'] = True
         return redirect(url_for('registered'))
 
     return render_template("signUp.html")
@@ -90,6 +93,7 @@ def signIn():
         if user:
             session['user_id'] = user['id']
             session['username'] = user['username']
+            session['just_logged_in'] = True
             return redirect(url_for('registered'))
         else:
             return "invalid username or password"
@@ -118,7 +122,8 @@ def series():
 
 @app.route('/registered')
 def registered():
-    if 'user_id' in session:
+    if 'user_id' in session and session.get('just_logged_in'):
+        session.pop('just_logged_in')
         return render_template("registered.html")
     else:
         return redirect(url_for('signIn'))
